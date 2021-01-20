@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <locale.h>
+main()
+{
+ setlocale(LC_ALL,"");
+ int a;
+ printf("Bir sayı girin : ");
+ scanf("%d", &a);
+ if(a==12 || a==1 || a==2 )
+ {
+  printf("KIŞ  ");
+ }
+ else if(a==3 ||a==4 || a==5)
+ {
+  printf("İLKBAHAR  ");
+ }
+ else if(a==6 ||a==7 || a==8)
+ {
+  printf("YAZ ");
+ }
+ 
+ else if(a==9 ||a==10 || a==11)
+ {
+  printf("SONBAHAR ");
+ }
+ else
+ {
+   printf(" Yanlış bir değer girdin");
+ }
+ return 0;
+}
